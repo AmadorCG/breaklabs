@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>breaklabs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>   
+    <div class="container"> 
+        <div class="columna1">
+            <div>
+                <div>logobreaklabs</div>
+                <div>lorem ipsum dolor</div>
+            </div>
+            <div></div>
+
+        </div>
+        <div class="columna-img"> 
+            <div class="mask100" id="imagen"></div>
+        </div>
+        <div class="columna3">
+            <div class="card0" id="toggle4">
+                <h2 class="titulo">networking</h2>
+                <p class="texto">gracias lorem impsum dolor</p>
+            </div>
+            <div class="card0" id="toggle3">
+                <h2 class="titulo">charla de servicios</h2>
+                <p class="texto">example lorem impsum dolor</p>
+            </div>
+            <div class="card0" id="toggle2">
+                <h2 class="titulo">charla de servicios</h2>
+                <p class="texto">example lorem impsum dolor</p>
+            </div>
+            <div class="card0" id="toggle1">
+                <h2 class="titulo">charla de servicios</h2>
+                <p class="texto">example lorem impsum dolor</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+    <script>
+        document.getElementById('toggle4').addEventListener('click', function() {
+            var imagen = document.getElementById('imagen');
+            imagen.className = ""
+            imagen.classList.add("mask0")
+        });
+
+        document.getElementById('toggle3').addEventListener('click', function() {
+            var imagen = document.getElementById('imagen');
+            imagen.className = ""
+            imagen.classList.add("mask25")
+        });
+        
+        document.getElementById('toggle2').addEventListener('click', function() {
+            var imagen = document.getElementById('imagen');
+            var card = document.getElementById('toggle2');
+            imagen.className = ""
+            imagen.classList.add("mask50")
+            card.className = ""
+            card.classList.add("card100")
+        });
+        
+        document.getElementById('toggle1').addEventListener('click', function() {
+            var imagen = document.getElementById('imagen');
+            var card = document.getElementById('toggle1');
+            imagen.className = ""
+            imagen.classList.add("mask75")
+            card.className = ""
+            card.classList.add("card100")
+        });
+    </script>
+</body>
+</html>

@@ -17,6 +17,19 @@ body .container .columna1 {
     width: 33%;
     height: 100%;
     background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+body .container .columna1 .logo1 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./public/logo1.png);
+    width: 25%;
+    height: 15%;
+    padding-right: 53vh;
 }
 
 body .container .columna3 {
